@@ -27,7 +27,7 @@ const List = () => {
     const { dispatch } = useContext(SearchContext)
 
     const handleClick = () => {
-        setOpenDates(!openDates)
+        setOpenDates(false)
         reFetch()
         dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } })
         navigate("/hotels", { state: { destination, dates, options } })
