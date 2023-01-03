@@ -1,0 +1,32 @@
+.register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.regInput {
+    height: 25px;
+    padding: 10px;
+}
+
+.regBtn {
+    border: none;
+    padding: 15px 30px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.regButton:disabled {
+    background-color: #0071c28c;
+    cursor: not-allowed;
+}
